@@ -2,7 +2,7 @@ DROP DATABASE IF EXISTS Assignment_01;
 CREATE DATABASE Assignment_01;
 USE assignment_01;
 
--- Create depaaccountrtment table
+-- Create department table
 CREATE TABLE department (
 	department_id TINYINT UNSIGNED PRIMARY KEY AUTO_INCREMENT,
     department_name VARCHAR(50) NOT NULL UNIQUE 
