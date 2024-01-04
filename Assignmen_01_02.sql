@@ -141,7 +141,7 @@ VALUES                (1       ,"content1", 1, TRUE ),
 -- Create exam table
 CREATE TABlE exam (
 	exam_id TINYINT UNSIGNED PRIMARY KEY AUTO_INCREMENT,
-    code CHAR(10) NOT NULL UNIQUE,
+    code CHAR(10) NOT NULL  UNIQUE, 
     title VARCHAR(50) NOT NULL,
     category_id TINYINT UNSIGNED,
     duration TINYINT UNSIGNED NOT NULL,
