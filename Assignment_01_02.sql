@@ -8,6 +8,8 @@ CREATE TABLE department (
     department_name VARCHAR(50) NOT NULL UNIQUE 
 );
 
+
+-- hhhhhh
 INSERT INTO department(department_id, department_name)
 VALUES                (1            ,"Ke toan" ),
                       (2            ,"Hanh chinh" ),
