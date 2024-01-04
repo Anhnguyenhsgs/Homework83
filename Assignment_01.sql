@@ -1,6 +1,6 @@
-DROP DATABASE IF EXISTS assignment_03;
-CREATE DATABASE assignment_03;
-USE assignment_03;
+DROP DATABASE IF EXISTS assignment_01;
+CREATE DATABASE assignment_01;
+USE assignment_01;
 
 -- Create department table
 CREATE TABLE department (
