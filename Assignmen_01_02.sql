@@ -13,7 +13,7 @@ VALUES                (1            ,"Ke toan" ),
                       (2            ,"Hanh chinh" ),
                       (3            ,"Marketing" ),
                       (4            ,"Phong phat trien 1" ),
-					  (5            ,"Phong phat trien 2" );
+		      (5            ,"Phong phat trien 2" );
                       
 -- Create position table
 CREATE TABLE position (
@@ -22,8 +22,8 @@ CREATE TABLE position (
 );
 INSERT INTO position (position_id,position_name)
 VALUES               (1          ,"dev"),
-					 (2          ,"test"),
-					 (3          ,"scrum master"),
+		     (2          ,"test"),
+		     (3          ,"scrum master"),
                      (4          ,"pm"),
                      (5          ,"BA");
 
@@ -41,8 +41,8 @@ CREATE TABlE account(
 );
 INSERT INTO account  (account_id, email, username, full_name, department_id,position_id)
 VALUES               (1,"nva@gmail.com", "nvA", "nguyen van A", 1, 1),
-					 (2,"nvb@gmail.com", "nvB", "nguyen van B", 2, 2),
-					 (3,"nvc@gmail.com", "nvC", "nguyen van C", 3, 3),
+		     (2,"nvb@gmail.com", "nvB", "nguyen van B", 2, 2),
+		     (3,"nvc@gmail.com", "nvC", "nguyen van C", 3, 3),
                      (4,"nvd@gmail.com", "nvD", "nguyen van D", 4, 4),
                      (5,"nve@gmail.com", "nvE", "nguyen van E", 5, 5);
 
@@ -56,8 +56,8 @@ CREATE TABlE `group` (
 );
 INSERT INTO `group`  (group_id, group_name, creator_id)
 VALUES               (1       ,"Group1", 1),
-					 (2       ,"Group2", 2),
-					 (3       ,"Group3", 3),
+		     (2       ,"Group2", 2),
+		     (3       ,"Group3", 3),
                      (4       ,"Group4", 4),
                      (5       ,"Group5", 5);
                      
@@ -72,8 +72,8 @@ CREATE TABlE group_account (
 );
 INSERT INTO group_account  (group_id, account_id, joined_date)
 VALUES                     (1       ,1, "2023-08-12" ),
-					       (2       ,2, "2023-08-13" ),
-					       (3       ,3, "2023-08-14" ),
+		           (2       ,2, "2023-08-13" ),
+			   (3       ,3, "2023-08-14" ),
                            (4       ,4, "2023-08-15" ),
                            (5       ,5, "2023-08-16" );
                            
@@ -85,8 +85,8 @@ CREATE TABlE type_question (
 
 INSERT INTO type_question  (type_id, type_name)
 VALUES                     (1       ,"essay"),
-					       (2       ,"multiple choice"),
-					       (3       ,"opinon"),
+		           (2       ,"multiple choice"),
+			   (3       ,"opinon"),
                            (4       ,"caculation"),
                            (5       ,"draw");
                            
@@ -98,8 +98,8 @@ CREATE TABlE category_question (
 
 INSERT INTO category_question  (category_id, category_name)
 VALUES                     (1       ,"Easy"),
-					       (2       ,"Lower medium"),
-					       (3       ,"Medium"),
+			   (2       ,"Lower medium"),
+			   (3       ,"Medium"),
                            (4       ,"Higher medium"),
                            (5       ,"Difficult");
 
@@ -117,7 +117,7 @@ CREATE TABlE question (
 );
 INSERT INTO question  (question_id, content, category_id, type_id, creator_id )
 VALUES                (1       ,"content1", 1, 1, 1),
-					  (2       ,"content2", 2, 2, 2),
+		      (2       ,"content2", 2, 2, 2),
                       (3       ,"content3", 3, 3, 3),
                       (4       ,"content4", 4, 4, 4),
                       (5       ,"content5", 5, 5, 5);
@@ -133,7 +133,7 @@ CREATE TABlE answer (
 
 INSERT INTO answer  (answer_id, content, question_id, is_correct )
 VALUES                (1       ,"content1", 1, TRUE ),
-					  (2       ,"content2", 2, FALSE),
+		      (2       ,"content2", 2, FALSE),
                       (3       ,"content3", 3, TRUE),
                       (4       ,"content4", 4, FALSE),
                       (5       ,"content5", 5, TRUE);
@@ -171,4 +171,4 @@ VALUES                (1            ,1 ),
                       (2            ,2 ),
                       (3            ,3),
                       (4            ,4),
-					  (5            ,5);
+		      (5            ,5);
