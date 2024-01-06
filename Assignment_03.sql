@@ -339,6 +339,10 @@ SELECT *
 FROM account
 WHERE full_name LIKE 'D%o';
 
+SELECT *
+FROM account
+WHERE substring_index(full_name," ",-1) LIKE 'D%o';
+
 -- Question 12: Xóa tất cả các exam được tạo trước ngày 20/12/2019
 DELETE FROM exam
 WHERE created_date < '2019-12-20';
